@@ -1,0 +1,17 @@
+[project]
+name = "funlib-devclone"
+version = "0.0.0"
+description = "Development proxy for funlib package - exposes local funlib source"
+requires-python = ">=3.13"
+dependencies = []
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["../funlib/src"]
+include = ["funlib*"]
+
+[tool.setuptools.package-dir]
+railib = "../funlib/src/funlib"
