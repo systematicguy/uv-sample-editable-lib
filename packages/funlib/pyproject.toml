@@ -1,6 +1,6 @@
 [project]
 name = "funlib"
-version = "0.1.0"
+version = "0.1.1"
 description = "shared library for business logic"
 readme = "README.md"
 authors = [
