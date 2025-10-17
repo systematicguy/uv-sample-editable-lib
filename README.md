@@ -1,0 +1,1 @@
+This repo is part of a uv demo project. See [uv-sample-editable-app1](https://github.com/systematicguy/uv-sample-editable-app1) for details.
