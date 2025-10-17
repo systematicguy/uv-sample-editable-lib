@@ -1,0 +1,14 @@
+[project]
+name = "funlib"
+version = "0.1.0"
+description = "shared library for business logic"
+readme = "README.md"
+authors = [
+    { name = "David Horvath", email = "david.h@systematicguy.com" }
+]
+requires-python = ">=3.13"
+dependencies = []
+
+[build-system]
+requires = ["uv_build>=0.8.13,<0.9.0"]
+build-backend = "uv_build"
