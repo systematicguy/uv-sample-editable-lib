@@ -2,10 +2,15 @@
 name = "uv-sample-editable-lib"
 version = "0.1.0"
 requires-python = ">=3.13"
-dependencies = []
+dependencies = [
+    "funlib",
+]
 
 [tool.uv.workspace]
 members = [
     "packages/funlib",
     "packages/funlib-devclone",
 ]
+
+[tool.uv.sources]
+funlib = { workspace = true }

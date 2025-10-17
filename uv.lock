@@ -1,0 +1,31 @@
+version = 1
+revision = 3
+requires-python = ">=3.13"
+
+[manifest]
+members = [
+    "funlib",
+    "funlib-devclone",
+    "uv-sample-editable-lib",
+]
+
+[[package]]
+name = "funlib"
+version = "0.1.1"
+source = { editable = "packages/funlib" }
+
+[[package]]
+name = "funlib-devclone"
+version = "0.0.0"
+source = { editable = "packages/funlib-devclone" }
+
+[[package]]
+name = "uv-sample-editable-lib"
+version = "0.1.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "funlib" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "funlib", editable = "packages/funlib" }]
